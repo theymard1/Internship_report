@@ -21,7 +21,7 @@
 **transfert wrapper juste et complet**  
 	utilisation github  
 	PR  
-
+	travis  
 **Quelques wrappers**  
 	tests passed  
 	tests failed  
