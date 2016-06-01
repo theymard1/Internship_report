@@ -1,27 +1,27 @@
+**Sujet du stage**
 
-*Sujet du stage*
-
-*Introduction*
-	présentation du problème
-
+**Introduction**  
+	présentation du problème  
 
 
-*création ou reprise du test*
-	section test dans le wrapper
-	fichiers d'output et d'input
 
-*test du wrapper*
-	planemo → voir si le test est correct
-		→commandes
-	test sur galaxy → fonctionnement du wrapper
+**création ou reprise du test**  
+	section test dans le wrapper  
+	fichiers d'output et d'input  
+
+**test du wrapper**  
+	planemo → voir si le test est correct  
+		→commandes  
+	test sur galaxy → fonctionnement du wrapper  
 
 
-*Edition d'un wrapper*
+**Edition d'un wrapper**  
 
-*transfert wrapper juste et complet*
-	utilisation github
-	PR
+**transfert wrapper juste et complet**  
+	utilisation github  
+	PR  
+	travis  
+**Quelques wrappers**  
+	tests passed  
+	tests failed  
 
-*Quelques wrappers*
-	tests passed
-	tests failed
