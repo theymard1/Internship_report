@@ -1,34 +1,39 @@
 **Sujet du stage**
 
-**Introduction**  
-<ol>
-	</li>présentation du problème</li>
-</ol>
+**1.Introduction**  
++ Problème entre outils bioinfos et biologistes
++ def rapide wrapper
++ wrapper ont besoins de tests (unitaire fonctionnels)
 
-**création ou reprise du test**  
-<ol>
-	<li>section test dans le wrapper</li>
-	<li>fichiers d'output et d'input</li>
-</ol>
+**2.création ou reprise du test**  
++ Prise en compte de tous les paramètres
++ Paramètres particuliers (ex: output de split_table)
++ Vérification des fichiers d'entrée
++ Génération de fichiers de sortie -> utilisitation des outils
 
-**test du wrapper**  
-<ol>
-	<li>planemo → voir si le test est correct  
-		→commandes</li>
-	<li>test sur galaxy → fonctionnement du wrapper</li>
-</ol>
+**3.test du wrapper**  
++ planemo  
++ + commandes de contrôle: lint, shed_lint
++ + planemo test  
+- test sur galaxy  
+- - vérifs fonctionement interface
+- - origine erreures pas clair avec planemo
+        
+**4.Edition d'un wrapper**
++ erreures corrigées
++ utilisation git
++ + branches
++ + commit
 
-**Edition d'un wrapper**  
+**5."publication" wrapper**  
++ utilisation github
++ + PR
++ + travis
 
-**transfert wrapper juste et complet**  
-<ol>
-	<li>utilisation github</li>
-	<li>PR</li>
-	<li>travis</li>
-</ol>
-**Quelques wrappers**  
-<ol>
-	<li>tests passed</li>
-	<li>tests failed</li>
-</ol>
-
+**6.Quelques wrappers**  
+- tests passed
+- - ...
++ tests failed
++ + humann2_download
++ + humann2_rna_dna_norm
++ + group_humann2_uniref_abundances_to_go
