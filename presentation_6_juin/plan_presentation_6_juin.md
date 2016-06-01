@@ -1,39 +1,80 @@
-**Sujet du stage**
+Présentation du 6 juin
+====
 
-**1.Introduction**  
-+ Problème entre outils bioinfos et biologistes
-+ def rapide wrapper
-+ wrapper ont besoins de tests (unitaire fonctionnels)
+# Introduction
 
-**2.création ou reprise du test**  
-+ Prise en compte de tous les paramètres
-+ Paramètres particuliers (ex: output de split_table)
-+ Vérification des fichiers d'entrée
-+ Génération de fichiers de sortie -> utilisitation des outils
+- Galaxy
+  - Problème d'utilisation des outils bioinfos par les biologistes (ligne de commande)
+  - Qu'est-ce que Galaxy? Présentation générale
+  - Comment sont intégrés les outils dans Galaxy?
+    - def rapide d'un wrapper
+- Test logiciel
+  - Qu'est-ce que le test logiciel?
+  - A quoi ça sert? Le principe derrière
+    - Exécution du logiciel et comparaison des sorties avec ce qui est attendu
+  - Pourquoi c'est important?
+    - Garantir que des changements n'impactent pas les résultats
+    - autres arguments?
+  - Différents types de tests (rapidement)
+    - Tests unitaires
+      - Définir ce que c'est
+    - Tests fonctionnels
+      - Définir ce que c'est et pourquoi c'est différent du test unitaire
+- Le test de wrappers
+    - wrapper ont besoins de tests fonctionnels
 
-**3.test du wrapper**  
-+ planemo  
-+ + commandes de contrôle: lint, shed_lint
-+ + planemo test  
-- test sur galaxy  
-- - vérifs fonctionement interface
-- - origine erreures pas clair avec planemo
-        
-**4.Edition d'un wrapper**
-+ erreures corrigées
-+ utilisation git
-+ + branches
-+ + commit
+# Processus de tests de wrapper
 
-**5."publication" wrapper**  
-+ utilisation github
-+ + PR
-+ + travis
+*Faire un schéma global des différentes étapes en fin pour résumer tout, mais
+avant passer étape par étape*
 
-**6.Quelques wrappers**  
-- tests passed
-- - ...
-+ tests failed
-+ + humann2_download
-+ + humann2_rna_dna_norm
-+ + group_humann2_uniref_abundances_to_go
+- Familiarisation avec l'outil bioinformatique lié au wrapper
+  - Identification des entrées/sorties
+  - Génération des entrées/sorties nécessaires pour le test
+- Familiarisation et modification du wrapper déjà développé
+  - Détailler les différentes choses à modifier dans le
+- Test localement avec `planemo`
+  - Présenter vite fait `planemo`
+  - Comment tester avec `planemo`?
+    - `planemo lint`
+    - installation de l'outil
+    - `planemo test`
+- Intégration des modifications dans le dépôt GitHub
+- Test dans un environnement "vierge"
+  - Environnement "vierge" de Travis CI (Integration continue)
+  - Test automatique quand soumission de changements dans le dépôt GitHub
+
+# (je n'ai pas de titre en tête là...)
+
+## Exemple de test
+
+*prendre un wrapper et présenter le résultat final du test*
+
+## Problèmes rencontrés et leurs solutions
+
+*mettre des exemples à chaque fois*
+
+- Des paramètres particuliers
+- Des erreurs parfois incompréhensibles
+- Problème de dépendances pas installées
+    - packages `conda`
+- Problèmes d'outils mal documentés
+    - difficulté de génération des données pour les tests
+
+## Wrappers testés
+
+*mettre la liste des wrappers sur lesquels tu as fait*
+
+## Et après?
+
+- Merge de la PR
+- Déploiement des wrappers sur Galaxy ToolShed
+
+# Conclusion
+
+- Retour : qu'est-ce que le test de wrapper
+- Appris
+    - Git
+    - GitHub pour le travail en collaboration (principe des PR)
+    - Principe d'intégration continue avec TravisCI
+    - Principe de tests (important en développement logiciel)
