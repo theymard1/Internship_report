@@ -73,14 +73,16 @@ Chaque fichier d'entrée ou paramètre que l'on souhaite utiliser doit être pr�
 # Test logiciel :
 
 	Tout logiciel ou programme informatique, tels que les wrappers par exemple, a besoin d'être testé afin de garantir une bonne fiabilité au niveau du fonctionnement du programme ainsi que son comportement en présence des différentes entrées.
-L'objectif d'un test est d'exécuter un programme dans l'intention d'y trouver des défauts et non pas pour démontrer que le programme ne contient plus d’erreur. Il faut donc que la personne chargée des tests ai pour but de trouver des erreurs, autrement elle n'en trouvera que peu ou pas.
+	Le test est une technique de contrôle qui consiste à lancer le logiciel avec des données d'entrée préparées à l'avance et de comparer ce que le programme renvoie avec les sorties attendues.
+
+	L'objectif d'un test est d'exécuter un programme dans l'intention d'y trouver des défauts et non pas pour démontrer que le programme ne contient plus d’erreur. Il faut donc que la personne chargée des tests ai pour but de trouver des erreurs, autrement elle n'en trouvera que peu ou pas.
 Cependant il est impossible d'obtenir un programme sans défauts en effet les tests ne peuvent vérifier qu'une partie des possibilitées. Cependant un objectif réalisable est de corriger les erreurs sévères et récurentes à l'aide de données de test représentatives.
 
 	Un autre problème est que le test logiciel est un processus destructif, à l'opposé de la programmation qui est un processus constructif. En effet le but du programmateur est de créer un logiciel qui fonctionne et rechigne souvent a effectuer les tests.
-On peut comparer la programmation à l'orthographe, on a toujours plus de mal à corriger ses propores fautes et cela demande plus d'efforts. Ainsi, il arrive souvent que des logiciels créés au sein d'équipes restreintes, comme les wrappers de Galaxy, soient publiés sans tests et donc sans garantie de fonctionnement. Ce qui peu poser problème lors de l'utilisation.
+	On peut comparer la programmation à l'orthographe, on a toujours plus de mal à corriger ses propores fautes et cela demande plus d'efforts. Ainsi, il arrive souvent que des logiciels créés au sein d'équipes restreintes, comme les wrappers de Galaxy, soient publiés sans tests et donc sans garantie de fonctionnement. Ce qui peu poser problème lors de l'utilisation.
 L'une des meilleures solutions afin de produire un test convenable est de faire appel à des personnes extérieures à l'équipe de développement (ce qui n'est pas forcément possible pour des travaux de faible envergure) pour développer ces tests avec un regard neuf sur le logiciel.
 
 	Il existe de nombreux types de tests différents (unitaires, intégration, performance, etc.) cependant deux types de tests sont principalement utilisés. Tout d'abord les tests unitaires dont le principe est de tester de façon indépendante un seul élément du logiciel.
-Le second type de tests est le test fonctionnel qui consiste dans le fait de tester la totalité d'un programme en reproduisant les « conditions réelles ». Celà veux dire que lors du test on effectu ce que l'utilisateur va potentiellement faire. Celà permet de voir à quelles erreures ce dernier peut être confronté. C'est ce type de test que nous avons pratiqué pour nos wrappers.
+	Le second type de tests est le test fonctionnel qui consiste dans le fait de tester la totalité d'un programme en reproduisant les « conditions réelles ». Celà veux dire que lors du test on effectu ce que l'utilisateur va potentiellement faire. Celà permet de voir à quelles erreures ce dernier peut être confronté. C'est ce type de test que nous avons pratiqué pour nos wrappers.
 
 
